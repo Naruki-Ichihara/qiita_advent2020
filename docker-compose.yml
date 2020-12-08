@@ -1,0 +1,11 @@
+version: '3'
+services:
+  dev:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: ichiharanaruki/fem_torch
+    ports:
+    - "8888:8888"
+    volumes:
+    - ~/workspace/qiita_advent2020:/workdir
